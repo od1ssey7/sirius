@@ -1,4 +1,4 @@
-body {
+*{
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -22,30 +22,33 @@ header {
 .search-container {
     display: flex;
     align-items: center;
+    border-radius: 25px; /* Закругление углов контейнера поиска */
+    overflow: hidden; /* Скрываем переполнение, чтобы сохранить закругление */
+    border: 1px solid #ccc; /* Рамка вокруг контейнера поиска */
 }
 
 .search-container input {
-    height: 30px; 
-    padding: 5px 10px; 
-    border: 2px solid #007BFF;
-    border-radius: 20px 0 0 20px; 
-    outline: none; 
-    transition: border-color 0.3s ease; 
-    width: 300px; 
+    border: none; /* Убираем рамку у поля ввода */
+    padding: 10px; /* Внутренние отступы для поля ввода */
+    outline: none; /* Убираем обводку при фокусе */
+    flex: 1; /* Поле ввода занимает оставшееся пространство */
+    border-radius: 25px 0 0 25px; /* Закругление левой стороны поля ввода */
 }
 
 .search-container input:focus {
     border-color: #0056b3; 
 }
 .search-container button {
-    height: 30px; 
-    padding: 5px 15px; 
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 0 20px 20px 0; 
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамку у кнопки */
+    padding: 10px 15px; /* Внутренние отступы для кнопки */
+    cursor: pointer; /* Указатель при наведении на кнопку */
+    border-radius: 0 25px 25px 0; /* Закругление правой стороны кнопки */
+}
+
+.search-container button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
 }
 
 .search-container button:hover {
@@ -63,6 +66,82 @@ header {
     color: #333;
 }
 
+.avia-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.row {
+    display: flex; /* Используем Flexbox для размещения карточек в ряд */
+    justify-content: space-between; /* Распределяем пространство между карточками */
+    width: 100%; /* Задаем ширину для ряда */
+    max-width: 1200px; /* Ограничиваем максимальную ширину ряда */
+    margin: 0 auto; /* Центрируем ряд на странице */
+}
+
+.card {
+    border: 1px solid #ddd; /* Граница карточки */
+    border-radius: 8px; /* Закругление углов */
+    overflow: hidden; /* Скрытие переполнения */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+    transition: transform 0.2s;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    flex: 1;
+    margin: 5px;
+    display: flex; /* Добавляем flex для внутреннего содержания карточки */
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-5px); /* Подъем карточки при наведении */
+    
+}
+
+.card-body-active {
+    padding: 15px; /* Отступы внутри карточки */
+    background-color: #fff;
+    
+}
+
+.card-link {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: inherit; /* Унаследовать цвет текста */
+}
+
+.card-image img {
+    width: 100%; /* Ширина изображения на всю карточку */
+    height: auto; /* Автоматическая высота для поддержания пропорций */
+    border-radius: 8px; /* Закругление углов изображения */
+    
+}
+.image {
+    width: 80%;
+
+}
+
+.card-text {
+    margin-top: 10px; /* Отступ сверху для текста */
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.card-text-title {
+    font-size: 1.25em; /* Размер шрифта заголовка */
+    font-weight: bold; /* Жирный шрифт */
+    color: #333; /* Цвет заголовка */
+}
+
+.card-text-cost {
+    font-size: 1em; /* Размер шрифта стоимости */
+    color: #888; /* Цвет стоимости */
+}
+
+.card-text-time {
+    font-size: 0.9em; /* Размер шрифта времени */
+    color: #555; /* Цвет времени */
+}
 
 .footer-container {
     background-color: #f8f9fa;
