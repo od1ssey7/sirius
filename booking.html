@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><img src="logo.jpg"></div>
+        <div class="search-container">
+            <input type="text" placeholder="Поиск...">
+            <button type="submit">Поиск</button>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li class="nav-entrance"><a href="#">Вход</a></li>
+                <li class="nav-bascket"><a href="#">Корзина</a></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <main>
+        <h2>Информация о купленных авиабилетах</h2>
+
+        <table>
+            <tr>
+                <th>Номер билета</th>
+                <th>Имя пассажира</th>
+                <th>Направление</th>
+                <th>Дата вылета</th>
+                <th>Время вылета</th>
+                <th>Класс обслуживания</th>
+                <th>Цена (руб.)</th>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Петрова Анна</td>
+                <td>Уфа - Санкт-Петербург</td>
+                <td>2023-10-20</td>
+                <td>14:30</td>
+                <td>Бизнес</td>
+                <td>75,000</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Петрова Анна</td>
+                <td>Уфа - Москва</td>
+                <td>2023-10-20</td>
+                <td>12:30</td>
+                <td>Бизнес</td>
+                <td>75,000</td>
+            </tr>
+    
+        </table>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <section class="footer-section-logo">
+                <div class="row">
+                    <div class="col-xs">
+                        <div class="footer-logo">
+                            <a href="logo.jpg">
+                                <img src="" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+            <section class="footer-section-lang">
+                <div class="row">
+                    <div class="col-sm-4 col-md-3 col-xs-7">
+                        <div>
+                            <select name="select-lang" id="select-lang">
+                                <option value="ru">Русский</option>
+                                <option value="en">English</option>
+                                <option value="de">Deutsch</option>
+                                <option value="fr">Français</option>
+                            </select>
+                        </div>
+
+                        <div class="footer-social">
+                            <a href="#">
+                                <img src="Vk.png" alt="VK">
+                            </a>
+                            <a href="#">
+                                <img src="X.png" alt="X">
+                            </a>
+                            <a href="#">
+                                <img src="inst.png" alt="instagram">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="footer-links link-mb link-mb-off">
+                            <div>
+                                <a href="#">Об Odissey Airlines</a>
+                            </div>
+                            <div>
+                                <a href="#">Помощь</a>
+                            </div>
+                            <div>
+                                <a href="#">FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    
+</body>
+</html>

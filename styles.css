@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.logo img {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+    height: 50px;
+    width: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    height: 30px; 
+    padding: 5px 10px; 
+    border: 2px solid #007BFF;
+    border-radius: 20px 0 0 20px; 
+    outline: none; 
+    transition: border-color 0.3s ease; 
+    width: 300px; 
+}
+
+.search-container input:focus {
+    border-color: #0056b3; 
+}
+.search-container button {
+    height: 30px; 
+    padding: 5px 15px; 
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 0 20px 20px 0; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.search-container button:hover {
+    background-color: #0056b3; 
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.footer-container {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer-logo img {
+    max-width: 150px; 
+    height: auto; 
+}
+
+.footer-divider {
+    height: 1px;
+    background-color: #e0e0e0; 
+    margin: 20px 0;
+}
+
+
+footer select {
+    padding: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.footer-social a {
+    margin-right: 10px; 
+}
+
+.footer-social img {
+    width: 24px; 
+    height: auto; 
+}
+
+
+.footer-links a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline; 
+}
+
+.footer-links {
+    font-size: 14px; 
+}
+
+.footer-links a {
+    color: #6c757d; 
+}
+
+.footer-logo a img {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+    height: 50px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .footer-copyright {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .footer-links {
+        margin-top: 10px; 
+    }
+}
